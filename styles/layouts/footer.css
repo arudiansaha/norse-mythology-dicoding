@@ -1,0 +1,21 @@
+.footer {
+  padding-block: 0.5rem;
+  background-color: var(--color-neutral-00);
+}
+
+.footer__paragraph {
+  text-align: center;
+  color: var(--color-neutral-01);
+}
+
+.footer__paragraph>a {
+  text-decoration: none;
+  color: var(--color-primary-00);
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    width: min(100%, 1920px);
+    margin-inline: auto;
+  }
+}

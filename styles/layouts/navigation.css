@@ -1,0 +1,112 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-280px);
+  width: 280px;
+  height: 100%;
+  background-color: var(--color-neutral-00);
+  color: var(--color-neutral-01);
+  transition: transform 800ms ease-in-out;
+}
+
+.navigation--enabled {
+  transform: translateX(0);
+}
+
+.navigation>.button--custom {
+  padding: 0.75em;
+}
+
+.navigation>.button--custom:active {
+  transform: scale(0.875);
+}
+
+.navigation__list {
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+
+.navigation__item>a {
+  display: inline-block;
+  padding-block: 0.75em;
+  padding-inline: 1.125em;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation__item--custom {
+  position: relative;
+}
+
+.navigation__item--custom>.button--custom {
+  display: flex;
+  align-items: center;
+  padding-block: 0.75em;
+  padding-inline: 1.125em;
+}
+
+.navigation__arrow {
+  transform: rotate(0);
+  transition: transform 800ms ease-in-out;
+}
+
+.navigation__arrow--rotated {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 1024px) {
+  .navigation {
+    position: static;
+    transform: translateX(0);
+    width: fit-content;
+    height: auto;
+    background-color: transparent;
+    color: var(--color-neutral-01);
+    transition: all 800ms ease-in-out;
+  }
+
+  .navigation--custom {
+    color: var(--color-neutral-00);
+  }
+
+  .navigation>.button--custom {
+    display: none;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 1rem;
+  }
+
+  .navigation__item>a {
+    padding-block: 0.5em;
+    padding-inline: 1em;
+    border-radius: 0.5rem;
+  }
+
+  .navigation__item>a:is(:hover, :focus) {
+    background-color: var(--color-neutral-02);
+    color: var(--color-primary-01);
+  }
+
+  .navigation__item>a:active {
+    transform: scale(0.875);
+  }
+
+  .navigation__item--custom>.button--custom {
+    padding-block: 0.5em;
+    padding-inline: 1em;
+  }
+
+  .navigation__item--custom>.button--custom:is(:hover, :focus) {
+    background-color: var(--color-neutral-02);
+    color: var(--color-primary-01);
+  }
+
+  .navigation__item--custom>.button--custom:active {
+    transform: scale(0.875);
+  }
+}

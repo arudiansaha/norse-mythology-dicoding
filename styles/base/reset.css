@@ -1,0 +1,55 @@
+@import url('./typography.css');
+@import url('../abstracts/variables.css');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Alegreya', var(--font-fallback);
+  font-size: 1em;
+  line-height: 1.5rem;
+  background-color: var(--color-neutral-01);
+  color: var(--color-neutral-00);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}
+
+picture,
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+select,
+option {
+  font: inherit;
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.25em;
+    line-height: 1.75rem;
+  }
+}

@@ -1,0 +1,7 @@
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: inherit;
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Rizky Ardiansyah">
+  <meta name="description"
+    content="Mitologi Nordik sebuah kepercayaan masyarakat Eropa Utara sebelum kedatangan agama Kristen.">
+  <meta name="keywords" content="myth, norse, ragnarok, odin, loki, thor">
+  <meta name="theme-color" content="#ff8400">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="./assets/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="./assets/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/main.css">
+
+  <title>Mitologi Nordik</title>
+</head>
+
+<body>
+  <header class="header">
+    <button class="button button--custom" id="menuButton" type="button" aria-label="open sidebar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+      </svg>
+    </button>
+    <h1 class="header__title">Mitologi Nordik</h1>
+    <nav class="navigation">
+      <button class="button button--custom" id="xButton" type="button" aria-label="close sidebar">
+        <svg class="navigation__xmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          fill="currentColor">
+          <path
+            d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+          </path>
+        </svg>
+      </button>
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#norse">Nordik</a></li>
+        <li class="navigation__item"><a href="#yggdrasil">Yggdrasil</a></li>
+        <li class="navigation__item navigation__item--custom">
+          <button class="button button--custom" id="dropdownButton" type="button" aria-label="open nine world links">
+            Niu Heimar
+            <svg class="navigation__arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+            </svg>
+          </button>
+          <div class="dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item"><a href="#midgard">Midgard</a></li>
+              <li class="dropdown__item"><a href="#asgard">Asgard</a></li>
+              <li class="dropdown__item"><a href="#vanaheim">Vanaheim</a></li>
+              <li class="dropdown__item"><a href="#jotunheim">Jotunheim</a></li>
+              <li class="dropdown__item"><a href="#niflheim">Niflheim</a></li>
+              <li class="dropdown__item"><a href="#muspelheim">Muspelheim</a></li>
+              <li class="dropdown__item"><a href="#alfheim">Alfheim</a></li>
+              <li class="dropdown__item"><a href="#nidavellir">Nidavellir</a></li>
+              <li class="dropdown__item"><a href="#hel">Hel</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="navigation__item"><a href="#profile">Profil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="content" class="content" tabindex="0">
+      <article class="hero" id="norse">
+        <picture class="hero__cover">
+          <source media="(min-width: 768px)" srcset="./assets/images/heros/image-hero-desktop.jpg">
+          <img class="hero__image" src="./assets/images/heros/image-hero-mobile.jpg"
+            alt="thor sedang bertarung dengan para raksasa">
+        </picture>
+        <div class="hero__description">
+          <h2 class="hero__title">Nordik, Kepercayaan dan Legenda</h2>
+          <p class="hero__paragraph">
+            Sebuah kepercayaan masyarakat Eropa Utara (negara Denmark, Norwegia, Islandia, dan Swedia) sebelum
+            kedatangan agama Kristen. Kepercayaan dan legenda ini menyebar ke negara-negara Eropa Utara lain, termasuk
+            Islandia yang memiliki sumber-sumber mitologi tersebut.
+          </p>
+        </div>
+        <a href="#yggdrasil">
+          <svg class="hero__chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path d="M16.939 10.939 12 15.879l-4.939-4.94-2.122 2.122L12 20.121l7.061-7.06z"></path>
+            <path d="M16.939 3.939 12 8.879l-4.939-4.94-2.122 2.122L12 13.121l7.061-7.06z"></path>
+          </svg>
+        </a>
+      </article>
+
+      <article class="content__yggdrasil" id="yggdrasil">
+        <div class="content__cover">
+          <img class="content__image" src="./assets/images/image-yggdrasil.jpg" alt="illustration of yggdrasil">
+        </div>
+        <div class="content__description">
+          <h2 class="content__title">Yggdrasil</h2>
+          <p class="content__paragraph">
+            Pohon sakral dengan ukuran luar biasa dan keramat dalam kosmologi Nordik. Di sekelilingnya terdapat segala
+            sesuatu, termasuk Sembilan Dunia. Cabang-cabang dari 9world dapat sampai kepada surga dan akar yang
+            menopangnya tembus sangat jauh hingga lokasi-lokasi yang lain; satu ke sumur Urðarbrunnr di surga, satu ke
+            mata air Hvergelmir, dan yang lain ke sumur Mímisbrunnr.
+          </p>
+          <p class="content__paragraph">
+            Elemen pertama dalam nama 9world, Yggr ("Mengerikan"), adalah salah satu dari banyak nama dewa Odin, dan
+            menunjukkan betapa kuat dan menakutkannya Viking menganggapnya. Elemen kedua, drasill, berarti "kuda." Jadi
+            nama 9world berarti "Kuda Odin," mengacu pada saat Yang Mengerikan mengorbankan dirinya untuk menemukan
+            rune.
+            Pohon itu adalah tiang gantungannya dan menopang tubuhnya yang lemas, yang digambarkan oleh imajinasi puitis
+            Norse secara metaforis sebagai kuda dan penunggangnya.
+          </p>
+          <p class="content__paragraph">
+            Banyak hewan dikatakan hidup di antara cabang dan akar 9world yang kokoh. Di sekitar pangkalannya mengintai
+            naga Nidhogg dan beberapa ular, yang menggerogoti akarnya. Seekor elang yang tidak disebutkan namanya
+            bertengger di cabang atasnya, dan seekor tupai, Ratatoskr, berlari ke atas dan ke bawah belalainya untuk
+            menyampaikan penghinaan naga kepada elang dan sebaliknya. Sementara itu, empat rusa - Dainn, Dvalinn,
+            Duneyrr,
+            dan Durathror - merumput di daun pohon.
+          </p>
+        </div>
+      </article>
+
+      <article class="content__9world">
+        <div class="boxes" id="midgard" tabindex="1">
+          <h2 class="boxes__title">Midgard</h2>
+          <img class="boxes__image" src="./assets/images/image-midgard.jpg" alt="midgard realm">
+          <div class="boxes__detail">
+            <p class="boxes__paragraph">
+              Nama “Midgard” (“Middle Enclosure”) memiliki arti ganda. Arti pertama dari kata tersebut mengacu pada
+              posisi peradaban "di tengah" dunia yang sebaliknya liar, yang tercermin pada bidang kosmologis oleh
+              Midgard yang dikelilingi oleh hutan belantara Jotunheim yang tidak berpenghuni, dunia raksasa yang sering
+              bermusuhan.
+            </p>
+          </div>
+        </div>
+        <div class="boxes" id="asgard" tabindex="2">
+          <h2 class="boxes__title">Asgard</h2>
+          <img class="boxes__image" src="./assets/images/image-asgard.jpg" alt="asgard realm">
+          <div class="boxes__detail">
+            <p class="boxes__paragraph">
+              Unsur -gard dalam nama Asgard mengacu pada konsep Jerman kuno tentang perbedaan antara innangard dan
+              utangard. Yang innangard (“di dalam pagar”) tertib, taat hukum, dan beradab, sedangkan yang utangard (“di
+              luar pagar”) semrawut, anarkis, dan liar. Ini berlaku baik untuk bidang geografis dan jiwa manusia;
+              pikiran dan tindakan bisa menjadi innangard atau utangard sama mudahnya dengan lokasi spasial.
+            </p>
+          </div>
+        </div>
+        <div class="boxes" id="vanaheim" tabindex="3">
+          <h2 class="boxes__title">Vanaheim</h2>
+          <img class="boxes__image" src="./assets/images/image-vanaheim.jpg" alt="vanaheim realm">
+          <div class="boxes__detail">
+            <p class="boxes__paragraph">
+              Salah satu puisi dalam Poetic Edda, yang menyatakan bahwa dewa Vanir Njord pergi ke timur ketika dia pergi
+              ke Asgard sebagai sandera pada akhir Perang Aesir-Vanir. Agaknya, kemudian, Vanaheim terletak di suatu
+              tempat di sebelah barat Asgard.
+            </p>
+          </div>
+        </div>
+        <div class="boxes" id="jotunheim" tabindex="4">
+          <h2 class="boxes__title">Jotunheim</h2>
+          <img class="boxes__image" src="./assets/images/image-jotunheim.jpg" alt="jotunheim realm">
+          <div class="boxes__detail">
+            <p class="boxes__paragraph">
+              Jotunheim juga dikenal sebagai Utgard (diucapkan “OOT-guard;” Old Norse Útgarðr, “Beyond the Fence”),
+              sebuah nama yang menetapkan wilayah tersebut sebagai salah satu ujung ekstrim dari spektrum konseptual
+              tradisional Jermanik antara innangard dan utangard. Yang innangard (“di dalam pagar”) tertib, taat hukum,
+              dan beradab, sedangkan yang utangard (“di luar pagar”) semrawut, anarkis, dan liar.
+            </p>
+          </div>
+        </div>
+        <div class="boxes" id="niflheim" tabindex="5">
+          <h2 class="boxes__title">Niflheim</h2>
+          <img class="boxes__image" src="./assets/images/image-niflheim.jpg" alt="niflheim realm">
+          <div class="boxes__detail">
+            <p class="boxes__paragraph">
+              Niflheim (diucapkan "NIF-el-hame;" dari Old Norse Niflheimr, "Dunia Kabut") adalah salah satu dari
+              Sembilan Dunia mitologi Nordik dan tanah air dari kegelapan purba, dingin, kabut, dan es. Dengan demikian,
+              ini adalah prinsip kosmologis yang berlawanan dari Muspelheim, dunia api dan panas.
+            </p>
+          </div>
+        </div>
+        <div class="boxes" id="muspelheim" tabindex="6">
+          <h2 class="boxes__title">Muspelheim</h2>
+          <img class="boxes__image" src="./assets/images/image-muspelheim.jpg" alt="muspelheim realm">
+          <div class="boxes__detail">
+            <p class="boxes__paragraph">
+              Makna tertuanya, ketika seseorang membandingkan berbagai sumber ini, tampaknya adalah “akhir dunia melalui
+              api.” Dalam puisi Norse Kuno sebelumnya, kata itu tampaknya merujuk pada seorang raksasa yang memimpin
+              "rakyat" atau "putranya" ke dalam pertempuran melawan para dewa selama Ragnarok. Bahkan jika gagasan
+              Muspelheim sebagai tempat daripada suatu peristiwa atau seseorang adalah penemuan Snorri, itu adalah
+              pertambahan yang relatif kecil, dan yang secara luas konsisten dengan penggunaan Múspell sebelumnya.
+            </p>
+          </div>
+        </div>
+        <div class="boxes" id="alfheim" tabindex="7">
+          <h2 class="boxes__title">Alfheim</h2>
+          <img class="boxes__image" src="./assets/images/image-alfheim.jpg" alt="alfheim realm">
+          <div class="boxes__detail">
+            <p class="boxes__paragraph">
+              Alfheim (diucapkan “ALF-hame;” Old Norse lfheimr, “The Homeland of the Elf”) adalah, seperti namanya,
+              dunia yang dihuni oleh para elf, kelas makhluk seperti dewa dalam mitologi dan agama pra-Kristen dari
+              Norse dan bangsa Jermanik lainnya.
+            </p>
+          </div>
+        </div>
+        <div class="boxes" id="nidavellir" tabindex="8">
+          <h2 class="boxes__title">Nidavellir</h2>
+          <img class="boxes__image" src="./assets/images/image-nidavellir.jpg" alt="nidavellir realm">
+          <div class="boxes__detail">
+            <p class="boxes__paragraph">
+              Dalam literatur Norse Kuno, rumah para kurcaci disebut Nidavellir (diucapkan “NID-uh-vell-ir;” Old Norse
+              Niðavellir, “Low Fields” atau “Dark Fields”) atau Svartalfheim (diucapkan “SVART-alf-hame ;” Old Norse
+              Svartálfaheimr, “Tanah Air Peri Hitam”).
+            </p>
+          </div>
+        </div>
+        <div class="boxes" id="hel" tabindex="9">
+          <h2 class="boxes__title">Hel</h2>
+          <img class="boxes__image" src="./assets/images/image-hel.jpg" alt="hel realm">
+          <div class="boxes__detail">
+            <p class="boxes__paragraph">
+              Seperti kuburan fisik, Hel dianggap berada di bawah tanah. Beberapa sumber juga menempatkannya di utara,
+              arah yang dingin dan gelap seperti kuburan. Seekor anjing kadang-kadang dikatakan menjaga pintu masuknya,
+              seperti Cerberus dalam mitologi Yunani.
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <aside class="aside" id="profile">
+      <header class="aside__header">
+        <h2 class="aside__title">Rizky Ardiansyah</h2>
+        <p class="aside__paragraph">
+          Halo! Saya Rizky Ardiansyah seorang <i>Junior Frontend Developer</i> dan juga bekerja sebagai pelayan. Asal
+          saya dari Sumedang, Jawa Barat, kota kecil yang tenang dan damai. Hobi saya mendengarkan berbagai genre musik,
+          selain musik hal yang paling disuka ialah hal yang berhubungan dengan astronomi dan sejarah ataupun cerita
+          rakyat. Bunga Daisy adalah bunga favorit saya.
+        </p>
+        <ul class="aside__list">
+          <li class="aside__item"><a href="https://www.dicoding.com/users/arudiansaha" target="_blank">Dicoding</a></li>
+          <li class="aside__item"><a href="https://www.linkedin.com/in/ky-ardiansyah" target="_blank">LinkedIn</a></li>
+          <li class="aside__item"><a href="https://www.github.com/arudiansaha" target="_blank">GitHub</a></li>
+          <li class="aside__item">
+            <a href="https://www.frontendmentor.io/profile/arudiansaha" target="_blank">Frontend Mentor</a>
+          </li>
+        </ul>
+      </header>
+
+      <section class="aside__profile">
+        <img class="aside__image" src="./assets/images/image-profile.jpg" alt="author smile on camera">
+      </section>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__paragraph">
+      &copy; Rizky Ardiansyah 2023 - Bantu saya mengembangkan website ini di <a
+        href="https://github.com/arudiansaha/norse-mythology-dicoding" target="_blank">GitHub</a>.
+    </p>
+  </footer>
+
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>

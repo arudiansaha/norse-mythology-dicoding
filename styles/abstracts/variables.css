@@ -1,0 +1,9 @@
+:root {
+  --color-neutral-00: rgb(19, 14, 1);
+  --color-neutral-01: rgb(255, 250, 235);
+  --color-neutral-02: rgb(207, 67, 7);
+  --color-primary-00: rgb(255, 132, 0);
+  --color-primary-01: rgb(255, 245, 214);
+
+  --font-fallback: 'Times New Roman', Times, serif;
+}
